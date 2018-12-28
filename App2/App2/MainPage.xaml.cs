@@ -12,6 +12,15 @@ namespace App2
         public MainPage()
         {
             InitializeComponent();
+            
+        }
+
+        private async void SayHelloBtn_Clicked(object sender, EventArgs e)
+        {
+
+            var name = NameEntry.Text;
+            await DisplayAlert("Greeting", $"Hello {name}!", "Bye");
+
         }
     }
 }

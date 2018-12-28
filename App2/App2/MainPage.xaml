@@ -4,11 +4,22 @@
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage">
 
-    <StackLayout>
+    <StackLayout VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Vertical"
+                Spacing="15">
+        
+        
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="Welcome to my app!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
+        <Label Text="enter your name"/>
+        <Entry x:Name="NameEntry" Text="John Doe"/>
+        <Button x:Name="SayHelloBtn"
+                Text="Say Hello"
+                Clicked="SayHelloBtn_Clicked"/>
     </StackLayout>
 
 </ContentPage>
